@@ -157,19 +157,13 @@ const users = [
     {name: 'Alex', age: 18}, 
     {name: 'Valery', age: 8}
 ];
-// for(i in users) {
-//     if(users.age < 15) {
-//         delete users.age;
-//     }
-// }console.log(users)
 
-for (i in users) {
-    for (let user in users[i]) {
-        if (user === 'age' && users[i][user] > 15) {
-            console.log(users[i].name);
-        }
-    }                                                                                       
-}
+const usersUnderfifteen = [];
+for(i in users) {
+    if(users[i].age > 15) {
+        usersUnderfifteen.push(users[i])
+    }
+} console.log(usersUnderfifteen);
 
 
 // Задание 10
