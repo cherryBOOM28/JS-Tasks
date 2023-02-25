@@ -27,8 +27,8 @@ else {
 
 // Зданаие 6
 let number1 = 10;
-if (number1 == 0) {
-    console.log(number1 + 1);
+if (number1 === 0) {
+    console.log(number1 = 1);
 }
 else if (number1 < 0) {
     console.log("less then zero");
@@ -107,10 +107,10 @@ let carRentCost = 40;
 let sellCost;
 let days = prompt("На сколько дней вы хотите арендовать машину?");
 if (days >= 7) {
-    sellCost = (days * 40) - 50;
+    sellCost = (days * carRentCost) - 50;
     console.log("Общяя стоимость с -$50 скидкой: " + "$" + sellCost);
 }
-else if (days >= 3 && days < 7) {
-    sellCost = (days * 40) - 20;
+else if (days >= 3) {
+    sellCost = (days * carRentCost) - 20;
     console.log("Общяя стоимость с -$20 скидкой: " + "$" + sellCost);
 }
