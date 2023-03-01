@@ -58,11 +58,17 @@ let stations = [
     'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'
 ];
 
-for (let i = 0; i < stations.length; i++) {
-    let newArray = stations[i];
-    let result = newArray;
-    console.log(result);
+function stationsName(stations) {
+    const stationCode = [];
+    const humanReadableCode = [];
+    for (let i in stations) {
+        stationCode.push(stations[i].slice(0, 3));
+        let indexOfSymbol = stations[i].indexOf(";");
+        humanReadableCode.push(stations[i].slice(indexOfSymbol + 1));
+        console.log(`${stationCode[i]}: ${humanReadableCode[i]}`)
+    }
 }
+stationsName(stations);
 
 
 // Задание 5
