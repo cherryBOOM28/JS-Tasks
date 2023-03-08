@@ -4,13 +4,13 @@
 // const inputTag = document.querySelector("input");
 // const ulTag = document.querySelector("ul");
 
-// inputTag.addEventListener("keydown", (event) => {
-//     const li = document.createElement("li");
-//     li.innerText = event.target.value;
-//     console.log(event);
+inputTag.addEventListener("keydown", (event) => {
+    const li = document.createElement("li");
+    li.innerText = event.target.value;
+    console.log(event);
 
-//     ulTag.appendChild(li);
-// })
+    ulTag.appendChild(li);
+})
 
 
 // Задание 2
@@ -29,18 +29,18 @@
 
 // Создать в html форму с инпутом и кнопкой. Также добавить в html тег ul. Когда форма отправляется, добавлять в список тег li. Его содержимое - введенный текст (input.value). После отправки формы инпут должен быть очищен (проставить пустую строку в value).
 
-// const form = document.querySelector(".form");
-// const taskThreeInput = document.querySelector(".taskThreeInput");
-// const taskThreeUl = document.querySelector(".taskThreeUl")
-// const btn = document.querySelector(".form-btn");
+const form = document.querySelector(".form");
+const taskThreeInput = document.querySelector(".taskThreeInput");
+const taskThreeUl = document.querySelector(".taskThreeUl")
+const btn = document.querySelector(".form-btn");
 
-// form.addEventListener("submit", (event) => {
-//     // console.log(event.target.value);
-//     const li = document.createElement("li");
-//     li.innerText = taskThreeInput.value;
-//     taskThreeUl.appendChild(li);
-//     taskThreeInput.value = " ";
-// });
+form.addEventListener("submit", (event) => {
+    // console.log(event.target.value);
+    const li = document.createElement("li");
+    li.innerText = taskThreeInput.value;
+    taskThreeUl.appendChild(li);
+    taskThreeInput.value = " ";
+});
 
 
 // Задание 4
@@ -48,37 +48,38 @@
 // Калькулятор. 
 // Создать в html форму с текстовым input, тегом select, вторым текстовым input и кнопкой. Добавить в html div. Внутри select будут options - арифметические знаки. В оба инпута пользователь вводит число. Когда пользователь отправляет форму (событие submit), над двумя числами выполняется действие, выбранное в select (чтобы получить выбранный пользователем option, мы "забираем" значение  select.value). Результат отображается в div.
 
-// const calcForm = document.querySelector(".calcForm");
-// const calcInp = document.querySelector(".calcInp");
-// const secondCalcInp = document.querySelector(".SecondCalcInp");
-// const calcSelect = document.querySelector(".calcSelect")
-// const calcBtn = document.querySelector(".calc-btn");
-// const resultDiv = document.querySelector(".result");
+const calcForm = document.querySelector(".calcForm");
+const calcInp = document.querySelector(".calcInp");
+const secondCalcInp = document.querySelector(".SecondCalcInp");
+const calcSelect = document.querySelector(".calcSelect")
+const calcBtn = document.querySelector(".calc-btn");
+const resultDiv = document.querySelector(".result");
 
 // if
-// calcForm.addEventListener("submit", () => {
+calcForm.addEventListener("submit", () => {
     
-//     let result;
+    let result;
 
-//     if(calcSelect.value == "+") {
-//         result = calcInp.value + secondCalcInp.value
-//     } 
-//     else if(calcSelect.value == "-") {
-//         result = calcInp.value - secondCalcInp.value
-//     }
-//     else if(calcSelect.value == "*") {
-//         result = calcInp.value * secondCalcInp.value
-//     }
-//     else if(calcSelect.value == "/") {
-//         result = calcInp.value / secondCalcInp.value
-//     }
-//     resultDiv.innerText = result;
-//     console.log(result)
-// });
+    if(calcSelect.value == "+") {
+        result = calcInp.value + secondCalcInp.value
+    } 
+    else if(calcSelect.value == "-") {
+        result = calcInp.value - secondCalcInp.value
+    }
+    else if(calcSelect.value == "*") {
+        result = calcInp.value * secondCalcInp.value
+    }
+    else if(calcSelect.value == "/") {
+        result = calcInp.value / secondCalcInp.value
+    }
+    resultDiv.innerText = result;
+    console.log(result)
+});
 
-// calcForm.addEventListener("submit", () => {
-//     calcResult.innerText = eval(`${calcInp.value} ${calcSelect.value} ${secondCalcInp.value}`);
-// });
+// eval
+calcForm.addEventListener("submit", () => {
+    calcResult.innerText = eval(`${calcInp.value} ${calcSelect.value} ${secondCalcInp.value}`);
+});
 
 
 // Задание 5
