@@ -16,9 +16,11 @@ form.addEventListener("submit", () => {
 
     li.addEventListener("change", (event) => {
         if(event.target.checked) {
+            tasksUl.insertBefore(li, tasksUl.children[tasksUl.children.length+1]);
             li.style.textDecoration = "line-through";
         } else {
             li.style.textDecoration = "none";
+            tasksUl.insertBefore(li, tasksUl.children[0]);
         }
         
     });
