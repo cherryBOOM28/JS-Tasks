@@ -40,13 +40,13 @@ data.innerText = "1 март, 2023 год";
 // Написать функцию, которая принимает на вход 3 параметра: название тега, название цвета, содержимое. Функция должна сформировать необходимый тег, добавить необходимый стиль с цветом и внести содержимое. Вывести несколько таких сгенерированных тегов в консоль, затем отправить их на страницу.
 
 function newText(tagName, color, content) {
-    let tag = document.createElement(tagName);
-    tag.style.color = color;
-    tag.innerText = content;
+  let tag = document.createElement(tagName);
+  tag.style.color = color;
+  tag.innerText = content;
+  document.body.appendChild(tag);
 }
 
-document.body.appendChild(tag);
-newText(p, red, lololoo);
+newText("p", "red", "lololoo");
 
 
 // Задание 7
