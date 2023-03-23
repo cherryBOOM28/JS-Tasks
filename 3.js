@@ -108,7 +108,7 @@ const sumObjectValues = (object) => {
         if (typeof object[value] === "number") {
             sum = sum + object[value];
         } 
-        console.log(sum);
+//         console.log(sum);
     }
 }
 sumObjectValues(objectWithNumbers);
