@@ -93,27 +93,21 @@ arrEven(numbers);
 
 // 3) Найти и вывести в консоль максимальное число массива. Подсказка: как и в случае с суммой, здесь сначала нужно объявить переменную (например, max), записать в нее первый элемент массива, а затем уже в цикле искать максимальное значение.
 
-function arrMax(array3) {
-    let sum3 = array3[0];
-    for (let i = 0; i < array3.length; i++) {
-        if (array3[i] > sum3) {
-            sum3 = array3[i]
-        }console.log(sum3);
+let max = 0;
+for (number of numbers) {
+    if(max < number) {
+        max = number;
     }
 }
-arrMax(numbers);
+console.log("Max number: " + max);
 
 // 4) Определить и вывести в консоль индекс максимального числа массива (или индексы, если число встречается более одного раза). Само максимальное число мы уже нашли в прошлой части задачи, повторно его искать не нужно.
 
-function maxIndex(array4) {
-    let sum4 = 0;
-    for (let i = 0; i < array4.length; i++) {
-        if (array4[i] > sum4) {
-            sum4 = array4[i]
-        }console.log(sum4);
+for (let i = 0; i < numbers.length; i++) {
+    if (max === numbers[i]) {
+        console.log(`index: ${i}, number: ${numbers[i]}`);
     }
-}
-arrMax(numbers);
+};
 
 
 // Задание 7
@@ -171,14 +165,19 @@ for(i in users) {
 //[{word:'морковь', length: 7}, {word:'баклажан', length: 8} и т.п.]
 //Вывести этот массив в консоль.
 //Подсказка: длину строки можно определить с помощью метода .length. Например, для переменной let string = 'text' это будет string.length (результат - 4, т.к. слово text состоит из 4 символов)
-//2) Пройтись по полученному массиву объектов и вывести в консоль строки вида "слово - длина_слова", например "картошка - 8"
 
 let vegetables = ["морковь", "баклажан", "репа", "топинамбур"];
-let vegetablesArray = []
-for (i in vegetables) {
-    vegetablesArray[i] = {
-        word: vegetables[i],
-        length: vegetables[i].length,
-    }
+let newVegetablesArray = [];
+for (let vegetable of vegetables) {
+    newVegetablesArray.push ({
+        word: vegetable,
+        length: vegetable.length,
+    });
+};
+console.log(newVegetablesArray);
+
+//2) Пройтись по полученному массиву объектов и вывести в консоль строки вида "слово - длина_слова", например "картошка - 8"
+
+for(let object of newVegetablesArray) {
+    console.log(`${object.word} - ${object.length}`);
 }
-console.log(vegetablesArray);
