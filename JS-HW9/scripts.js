@@ -276,6 +276,13 @@ document.addEventListener('keydown', e => {
     }
 });
 
+mainVideo.addEventListener("click", ()=>{
+    if(mainVideo.paused)
+      mainVideo.play();
+    else
+      mainVideo.pause();
+});
+
 //changing video mode to fullscreen
 fullscreenBtn.addEventListener("click", () => {
     videoContainer.classList.toggle("fullscreen");
