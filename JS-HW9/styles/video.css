@@ -22,6 +22,7 @@
 .container-video.fullscreen {
     max-width: 100%;
     width: 98%;
+    /* height: 50vh; */
 }
 
 .container-video video {
@@ -193,4 +194,36 @@
 .speed-options li.active-speed {
     color: #ffffff;
     background: #BDAE82;
+}
+
+@media screen and (max-width:768px) {
+    .video-play {
+        top: 65%;        
+    }
+
+    .options button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        color: #ffffff;
+        font-size: 30px;
+        background: none;
+        cursor: pointer;
+    }
+
+    span.material-icons {
+        font-size: 30px;
+    }
+
+    span.material-symbols-rounded {
+        font-size: 30px;
+    }
+
+    .options .video-timer {
+        font-size: 18px;
+    }
+
+    .video-timeline  .progress-area {
+        height: 4px;
+    }    
 }
