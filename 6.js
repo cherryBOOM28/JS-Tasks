@@ -6,7 +6,7 @@
 
 inputTag.addEventListener("keydown", (event) => {
     const li = document.createElement("li");
-    li.innerText = event.target.value;
+    li.innerText = event.key;
     console.log(event);
 
     ulTag.appendChild(li);
@@ -61,24 +61,25 @@ calcForm.addEventListener("submit", () => {
     let result;
 
     if(calcSelect.value == "+") {
-        result = calcInp.value + secondCalcInp.value
+        result = parseInt(calcInp.value) + parseInt(secondCalcInp.value);
     } 
     else if(calcSelect.value == "-") {
-        result = calcInp.value - secondCalcInp.value
+        result = calcInp.value - secondCalcInp.value;
     }
     else if(calcSelect.value == "*") {
-        result = calcInp.value * secondCalcInp.value
+        result = calcInp.value * secondCalcInp.value;
     }
     else if(calcSelect.value == "/") {
-        result = calcInp.value / secondCalcInp.value
+        result = calcInp.value / secondCalcInp.value;
     }
-    resultDiv.innerText = result;
-    console.log(result)
+//     resultDiv.innerText = result;
+    console.log(result);
 });
 
 // eval
-calcForm.addEventListener("submit", () => {
-    calcResult.innerText = eval(`${calcInp.value} ${calcSelect.value} ${secondCalcInp.value}`);
+calcForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    resultDiv.innerText = eval(`${calcInp.value} ${calcSelect.value} ${secondCalcInp.value}`);
 });
 
 
