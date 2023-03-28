@@ -10,13 +10,14 @@
 }
 
 .open__burger__menu {
-    display: block;
+    opacity: 1;
     background-color: #000;
     padding: 10px;
     width: 50px;
     height: 50px;
     background-image: url(images/menu-icon.png);
     background-size: cover;
+    transition: .3s;
 }
 
 .burger-menu {
@@ -45,6 +46,7 @@
     width: 50px;
     height: 50px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .active {
