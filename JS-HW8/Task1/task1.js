@@ -25,3 +25,17 @@ window.addEventListener("keydown", (event) => {
         closeModal();
     }
 });
+
+window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        closeModal()
+    }
+});
+
+// popup.addEventListener("click", () => {
+//     closeModal()
+// });
+
+// popupContent.addEventListener('click', (e) => {
+//     e.stopPropagation()
+// })
