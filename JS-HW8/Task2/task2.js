@@ -7,10 +7,12 @@ close.addEventListener("click", closeBurgerMenu)
 
 function openBurgerMenu() {
     burgerMenu.classList.add("active");
-    burgerIcon.style.display = "none"
+    // burgerIcon.style.display = "none"
+    burgerIcon.style.opacity = 0;
 }
 
 function closeBurgerMenu() {
     burgerMenu.classList.remove("active");
-    burgerIcon.style.display = "block"
+    // burgerIcon.style.display = "block"
+    burgerIcon.style.opacity = 1;
 }
