@@ -35,6 +35,7 @@ const taskThreeUl = document.querySelector(".taskThreeUl")
 const btn = document.querySelector(".form-btn");
 
 form.addEventListener("submit", (event) => {
+    event.preventDefault();
     // console.log(event.target.value);
     const li = document.createElement("li");
     li.innerText = taskThreeInput.value;
