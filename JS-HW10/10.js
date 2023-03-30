@@ -22,21 +22,3 @@ console.log(nameJSONConvert);
 let user = name;
 localStorage.setItem("user", JSON.stringify(user));
 let newUser = JSON.parse(localStorage.getItem("user"));
-
-
-// решения есть 7 уроке (6.js github)
-// Задание 3
-// Создать в html форму с инпутом и кнопкой. Также добавить в html тег ul. Когда форма отправляется, добавлять в список тег li. Его содержимое - введенный текст (input.value). После отправки формы инпут должен быть очищен (проставить пустую строку в value).
-
-// const form = document.querySelector(".form");
-// const input = document.querySelector(".form__input");
-// const ul = document.querySelector(".form__ul")
-// const btn = document.querySelector(".form__btn-btn");
-
-// form.addEventListener("submit", (event) => {
-//     event.preventDefault();
-//     const li = document.createElement("li");
-//     li.innerText = input.value;
-//     ul.appendChild(li);
-//     input.value = " ";
-// });
