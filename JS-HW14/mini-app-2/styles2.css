@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFAF3;
+  background-image: url(./images/grapes.png);
+  background-size: 660px auto;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+body header {
+  padding: 43px 0 43px;
+  margin-left: 180px;
+  border-bottom: 1px solid #C08D5D;
+  max-width: 470px;
+}
+body header .container {
+  max-width: 1140px;
+  margin: auto;
+}
+body header .container .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+body header .container nav {
+  margin-left: 83px;
+  display: inline-block;
+  vertical-align: middle;
+}
+body header .container nav li {
+  display: inline-block;
+  margin: 0px 40px 0 0;
+}
+body header .container nav li a {
+  display: inline;
+  margin-right: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+body header .container nav li a:hover {
+  color: #C08D5D;
+}
+body header .container nav li a img {
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+body main {
+  margin: 137px 0 72px 0;
+}
+body main .container {
+  max-width: 1140px;
+  margin: auto;
+}
+body main .container h2 {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 50px;
+  color: #3F4042;
+  line-height: 57px;
+}
+body main .container h2:after {
+  content: url("./images/logo2.svg");
+  margin-left: 8px;
+}
+body main .container h1 {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 70px;
+  color: #3F4042;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+body main .container .wave-line {
+  margin: 45px 0 25px 0;
+}
+body main .container .wave-line .whiteline {
+  display: none;
+}
+body main .container p {
+  padding: 0 610px 0 0;
+  font-family: "Open Sans";
+  color: #3F4042;
+  letter-spacing: 1px;
+}
+body main .container .link-btn {
+  display: inline-block;
+  border: 2px solid #C08D5D;
+  color: #3F4042;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding-left: 15px;
+  margin-top: 75px;
+  line-height: 65px;
+  font-family: "Open Sans";
+}
+body main .container .link-btn:after {
+  content: url("./images/arrow.svg");
+  display: inline-block;
+  width: 59px;
+  height: 65px;
+  background-color: #C08D5D;
+  color: #fff;
+  line-height: 64px;
+  text-align: center;
+  margin-left: 11px;
+}
+body main .container .mouse {
+  display: block;
+  text-align: center;
+  margin-top: 82px;
+}
+
+.dark-theme {
+  background-color: #3F4042;
+  background-image: url(./images/grapes.png);
+  background-size: 660px auto;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.dark-theme header {
+  padding: 43px 0 43px;
+  margin-left: 180px;
+  border-bottom: 1px solid #C08D5D;
+  max-width: 470px;
+}
+.dark-theme header .container {
+  max-width: 1140px;
+  margin: auto;
+}
+.dark-theme header .container .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.dark-theme header .container nav {
+  margin-left: 83px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dark-theme header .container nav li {
+  display: inline-block;
+  margin: 0px 40px 0 0;
+}
+.dark-theme header .container nav li a {
+  display: inline;
+  margin-right: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+.dark-theme header .container nav li a:hover {
+  color: #C08D5D;
+}
+.dark-theme main {
+  margin: 137px 0 72px 0;
+}
+.dark-theme main .container {
+  max-width: 1140px;
+  margin: auto;
+}
+.dark-theme main .container h2 {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 50px;
+  color: white;
+  line-height: 57px;
+}
+.dark-theme main .container h2:after {
+  content: url("./images/logo2.svg");
+  margin-left: 8px;
+}
+.dark-theme main .container h1 {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 70px;
+  color: #fff;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+.dark-theme main .container .wave-line .whiteline {
+  display: block;
+}
+.dark-theme main .container .wave-line .line {
+  display: none;
+}
+.dark-theme main .container p {
+  padding: 0 610px 0 0;
+  font-family: "Open Sans";
+  color: #fff;
+  letter-spacing: 1px;
+}
+.dark-theme main .container .link-btn {
+  display: inline-block;
+  border: 2px solid #C08D5D;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding-left: 15px;
+  margin-top: 75px;
+  line-height: 65px;
+  font-family: "Open Sans";
+}
+.dark-theme main .container .link-btn:after {
+  content: url("./images/arrow.svg");
+  display: inline-block;
+  width: 59px;
+  height: 65px;
+  background-color: #C08D5D;
+  color: #fff;
+  line-height: 64px;
+  text-align: center;
+  margin-left: 11px;
+}
+.dark-theme main .container .mouse {
+  display: block;
+  text-align: center;
+  margin-top: 82px;
+}/*# sourceMappingURL=styles2.css.map */

@@ -1,0 +1,36 @@
+/* стиль панели с вкладками */
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+}
+
+.tabs button.activebtn {
+    background-color: #ccc;
+}
+
+.tabs button:hover {
+    background-color: #ddd;
+}
+
+/* изменение цвета фона кнопок для открытия содержимого вкладки */
+.tabs button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
