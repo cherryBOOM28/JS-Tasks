@@ -1,0 +1,10 @@
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.email {
+    font-style: italic;
+    margin: 15px 0;
+}
+
