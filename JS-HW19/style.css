@@ -1,0 +1,9 @@
+.active {
+    background-color: #0C6DFD;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
