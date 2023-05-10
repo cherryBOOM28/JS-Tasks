@@ -41,28 +41,37 @@ class ProfileInfo {
     }
 
     async displayProfileInfo() {
-        const response = await fetch(url);
-        const data = await response.json();
-        // console.log(data)
-        displayCard(data[0]);
+        try {
+            const response = await fetch(url);
+            if(!response.ok) {
+                console.error("Something is wrong with response!")
+            } else {
+                const data = await response.json();
+                displayCard(data[0]);
 
-        for (let i = 0; i < data.length; i++) {
-            const userListInfo = document.createElement("li");
-            // console.log(data)
-            userListInfo.innerText = data[i].name;
-            userListInfo.className = "list-group-item";
-            usersArray.appendChild(userListInfo);
-
-            const userListItem = usersArray.children[i];
-            userListItem.addEventListener("click", (e) => {
-                e.preventDefault();
-                document.querySelectorAll(".list-group-item").forEach(li => {
-                    li.classList.remove("active");
-                });
-                userListItem.classList.add("active");
-                displayCard(data[i]);
-            });
-        };
+                for (let i = 0; i < data.length; i++) {
+                    const userListInfo = document.createElement("li");
+                    // console.log(data)
+                    userListInfo.innerText = data[i].name;
+                    userListInfo.className = "list-group-item";
+                    usersArray.appendChild(userListInfo);
+        
+                    const userListItem = usersArray.children[i];
+                    userListItem.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        document.querySelectorAll(".list-group-item").forEach(li => {
+                            li.classList.remove("active");
+                        });
+                        userListItem.classList.add("active");
+                        displayCard(data[i]);
+                    });
+                };
+            }
+        } catch(error) {
+            console.error("Problem with request" + error)
+        } finally {
+            console.log("Profile info: ")
+        }
         function displayCard(cardInfo) {
             username.innerText = cardInfo.name;
             userTag.innerText = cardInfo.username;
